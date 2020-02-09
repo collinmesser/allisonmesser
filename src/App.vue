@@ -1,28 +1,62 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img
+      alt="AM Creative Logo"
+      class="header-logo"
+      src="./assets/logos/AM_Creative-logo-circle-black-150.svg"
+    >
+    <Hero />
+    <div class="projects">
+      <Project 
+        src="AMCreative_Portfolio-Senna_BW.png" 
+        alt="Senna Logo"
+      />
+      <Project 
+        src="AMCreative_Portfolio-Senna_BW.png" 
+        alt="Senna Logo"
+      />
+    </div>
+
+    <!-- <About></About> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Hero from './components/Hero.vue'
+import Project from './components/Project.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Hero,
+    Project
   }
 }
 </script>
 
 <style>
+body{
+  margin: 0;
+}
+
 #app {
+  display: grid;
+  color: #2c3e50;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin-top: 40px;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+.header-logo {
+  float: left;
+  margin-left: 50px;
+  max-width: 100px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 </style>
