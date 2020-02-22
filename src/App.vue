@@ -1,36 +1,23 @@
 <template>
   <div id="app">
-    <img
-      alt="AM Creative Logo"
-      class="header-logo"
-      src="./assets/logos/AM_Creative-logo-circle-black-150.svg"
-    >
-    <Hero />
-    <div class="projects">
-      <Project 
-        src="AMCreative_Portfolio-Senna_BW.png" 
-        alt="Senna Logo"
-      />
-      <Project 
-        src="AMCreative_Portfolio-Senna_BW.png" 
-        alt="Senna Logo"
-      />
-    </div>
-
-    <!-- <About></About> -->
+    <header>
+      <router-link to="/">
+        <img
+          alt="AM Creative Logo"
+          class="header-logo"
+          page=""
+          src="./assets/logos/AM_Creative-logo-circle-black-150.svg"
+        >
+      </router-link>
+    </header>
+    <router-view />
   </div>
 </template>
 
 <script>
-import Hero from './components/Hero.vue'
-import Project from './components/Project.vue'
 
 export default {
   name: 'App',
-  components: {
-    Hero,
-    Project
-  }
 }
 </script>
 
@@ -51,7 +38,7 @@ body{
 
 .header-logo {
   float: left;
-  margin-left: 50px;
+  margin: 0 0 40px 50px;
   max-width: 100px;
 }
 

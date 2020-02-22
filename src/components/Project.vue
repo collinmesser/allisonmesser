@@ -1,11 +1,15 @@
 <template>
   <div class="project">
     <div class="card">
-      <img
-        :alt="alt"
-        class=""
-        :src="require(`../assets/designs/${src}`)"
-      >
+      <router-link :to="page">
+        <img
+          :alt="alt"
+          class=""
+          :src="hover ? require(`../assets/designs/${hovered}`) : require(`../assets/designs/${src}`)"
+          @mouseover="hover = true"
+          @mouseleave="hover = false"
+        >
+      </router-link>
     </div>
   </div>
 </template>
@@ -13,20 +17,44 @@
 <script>
 export default {
   name: "Project",
+  data() {
+    return {
+      hover: false,
+    }
+  },
   props: {
-    alt: String,
-    src: String
+    alt: {
+      type: String,
+      default: 'alt',
+    },
+    hovered: {
+      type: String,
+      default: '',
+    },
+    page: {
+      type: String,
+      default: 'Senna',
+    },
+    src: {
+      type: String,
+      default: '',
+    },
   }
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 img {
-  max-width: 90%;
+  cursor: pointer;
+  max-width: 100%;
 }
 
 .project {
   display: grid;
+}
+
+.card {
+  margin: 50px auto;
+  max-width: 80%;
 }
 </style>
