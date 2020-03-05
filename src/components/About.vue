@@ -1,9 +1,23 @@
 <template>
   <div class="hello">
     <p>
-      Hey there! I'm Allison Messer, a designer, copywriter, and digital marketer. This website is currently in progress. If you'd like to get in touch for design/writing/coffee please fill out the form <router-link to="contact">
-        here
-      </router-link>.
+      Hey there! I'm Allison Messer, a designer, copywriter, and digital marketer. This website is currently in progress. Please  
+      <a
+        id="show-modal"
+        @click="showModal = true"
+        href="javascript:void(0)"
+      >
+        click here to get in touch
+      </a>
+      <contact
+        v-if="showModal"
+        @close="showModal = false"
+      >
+        <h3 slot="header">
+          custom header
+        </h3>
+      </contact>
+      for design/writing/coffee.
     </p>
     <div class="social-links">
       <a href="https://www.linkedin.com/in/allisonmesser/">LinkedIn</a>
@@ -14,8 +28,18 @@
 </template>
 
 <script>
+import contact from './Contact.vue';
+
 export default {
   name: "About",
+  components: {
+    contact,
+  },
+  data: function() {
+    return {
+      showModal: false
+    };
+  }
 };
 </script>
 

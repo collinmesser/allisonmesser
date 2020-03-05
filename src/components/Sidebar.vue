@@ -11,7 +11,7 @@ export default {
   name: "Sidebar",
   components: {
     About,
-  }
+  },
 };
 </script>
 

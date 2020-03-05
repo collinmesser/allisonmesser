@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './components/Home.vue';
-import Contact from './components/pages/Contact.vue';
+// import Contact from './components/Contact.vue';
 import Senna from './components/pages/Senna';
 import Fiadventures from './components/pages/Fiadventures';
 import Nightmarket from './components/pages/Nightmarket';
@@ -19,11 +19,11 @@ export default new Router({
       name: 'home',
       component: Home,
     },
-    {
-      path: '/contact',
-      name: 'contact',
-      component: Contact,
-    },
+    // {
+    //   path: '/contact',
+    //   name: 'contact',
+    //   component: Contact,
+    // },
     {
       path: '/senna',
       name: 'senna',
