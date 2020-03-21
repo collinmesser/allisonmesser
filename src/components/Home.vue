@@ -55,16 +55,4 @@ export default {
 .home {
   display: flex;
 }
-
-.col {
-  
-}
-
-/* sidebar {
-  flex: 1
-}
-
-aside {
-  flex: 2
-} */
 </style>

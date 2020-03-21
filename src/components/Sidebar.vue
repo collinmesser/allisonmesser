@@ -19,6 +19,7 @@ export default {
 .sidebar {
   position: relative;
   width: 100%;
-  border-right: solid 1px black;
+  -webkit-box-shadow: 5px 20px 20px 0px rgba(0,0,0,0.3); 
+  box-shadow: 5px 20px 20px 0px rgba(0,0,0,0.3);
 }
 </style>
