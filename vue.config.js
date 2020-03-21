@@ -3,7 +3,7 @@ module.exports = {
     config
       .plugin('html')
       .tap((args) => {
-        args[0].title = 'Allison Messer Design';
+        args[0].title = 'Allison Messer Creative';
         return args;
       });
   },
