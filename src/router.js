@@ -7,6 +7,10 @@ import Fiadventures from './components/pages/Fiadventures';
 import Nightmarket from './components/pages/Nightmarket';
 import Stripchurch from './components/pages/Stripchurch';
 import Truerevival from './components/pages/Senna';
+import Hello from './components/pages/Hello';
+import ContentCreation from './components/pages/ContentCreation';
+import SocialMedia from './components/pages/SocialMedia';
+import Projects from './components/pages/Projects';
 
 
 Vue.use(Router);
@@ -19,11 +23,26 @@ export default new Router({
       name: 'home',
       component: Home,
     },
-    // {
-    //   path: '/contact',
-    //   name: 'contact',
-    //   component: Contact,
-    // },
+    {
+      path: '/hello',
+      name: 'Hello',
+      component: Hello,
+    },
+    {
+      path: '/contentcreation',
+      name: 'contentcreation',
+      component: ContentCreation,
+    },
+    {
+      path: '/socialmedia',
+      name: 'socialmedia',
+      component: SocialMedia,
+    },
+    {
+      path: '/projects',
+      name: 'projects',
+      component: Projects,
+    },
     {
       path: '/senna',
       name: 'senna',
