@@ -3,6 +3,12 @@
     <div class="modal-mask">
       <div class="modal-wrapper">
         <div class="modal-container">
+          <button
+            class="modal-button"
+            @click="$emit('close')"
+          >
+            X
+          </button>
           <div class="modal-header">
             <slot name="header">
               default header
@@ -19,20 +25,29 @@
               <p class="hidden">
                 <label>
                   Don’t fill this out if you're human:
-                  <input name="bot-field" />
+                  <input name="bot-field">
                 </label>
               </p>
               <p>
-                <label>Email: <input type="text" name="email"/></label>
+                <label>Name: <input
+                  type="text"
+                  name="name"
+                ></label>
               </p>
               <p>
-                <label>Message: <textarea name="message"/></label>
+                <label>Email: <input
+                  type="text"
+                  name="email"
+                ></label>
+              </p>
+              <p>
+                <label>Message: <textarea name="message" /></label>
               </p>
               <div class="modal-footer">
                 <p>
                   <button
                     type="submit"
-                    class="modal-default-button"
+                    class="modal-button"
                     @click="$emit('close')"
                   >
                     Send
@@ -91,7 +106,7 @@ export default {
   margin: 20px 0;
 }
 
-.modal-default-button {
+.modal-button {
   float: right;
 }
 

@@ -29,6 +29,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
+
+  .fp {
+    font-family: fertigo-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .fp-script {
+    font-family: fertigo-script, serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 }
 
 .hidden {

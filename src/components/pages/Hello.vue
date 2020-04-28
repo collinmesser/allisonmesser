@@ -3,14 +3,16 @@
     <Sidebar />
     <Header src="AM_Creative_Hello.jpg" />
     <section>
-      <h2>
+      <h2 class="fp-script">
         Hey There!
       </h2>
       <p>
         Well hi! I want to personally say THANK YOU for stopping by and learning
         a little bit about me.
       </p>
-      <h2>So... Who are you?</h2>
+      <h2 class="fp-script">
+        So... Who are you?
+      </h2>
       <p>
         I’m Allison Messer, born and raised in the great city Dayton, Ohio where
         I’ve had the opportunity to learn, work and grow in a creative
@@ -22,7 +24,9 @@
         word and design are not much different. They both achieve the same
         outcome of connection.
       </p>
-      <h2>What about when you aren’t creating design and content?</h2>
+      <h2 class="fp-script">
+        What about when you aren’t creating design and content?
+      </h2>
       <p>
         I get to spend my days with a really cool guy that is my husband who is
         a talented web designer and two incredibly silly and fun-loving kids. I
@@ -39,7 +43,9 @@
         factor for making lifestyle changes and I feel pretty lucky to be able
         to have that impact in many people’s lives.
       </p>
-      <h2>What’s your Enneagram Type?</h2>
+      <h2 class="fp-script">
+        What’s your Enneagram Type?
+      </h2>
       <p>
         I thought you were probably wondering that. I’m an Enneagram Type One
         with a Two wing. I’m an advocate with a strong sense of ethics and moral

@@ -1,9 +1,9 @@
 <template>
   <div class="portfolio">
     <Sidebar />
-    <Header src="AM_Creative_Hello.jpg">
+    <Header src="AM_Creative_DesignPortfolio.jpg">
       <template v-slot:header>
-        <h1>Design<br>Portfolio</h1>
+        <h1>DESIGN<br>PORTFOLIO</h1>
       </template>
     </Header>
     <section>

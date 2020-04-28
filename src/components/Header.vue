@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <header>
+    <header class="fp">
       <slot name="header" />
     </header>
     <img
@@ -38,7 +38,7 @@ export default {
   }
 
   header {
-    bottom: 9em;
+    top: 5em;
     color: #fff;
     margin-left: 2em;
     position: absolute;
