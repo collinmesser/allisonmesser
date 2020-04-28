@@ -89,7 +89,7 @@
         @close="showModal = false"
       >
         <h3 slot="header">
-          custom header
+          Thanks for reaching out!
         </h3>
       </contact>
       <p class="footer-link">
@@ -118,7 +118,7 @@ export default {
 
 <style scoped lang="scss">
 .sidebar {
-  align-content: start;
+  align-content: flex-start;
   background-image: url("../assets/AM-Sidebar-2.svg");
   background-size: cover;
   display: flex;
@@ -158,6 +158,16 @@ export default {
       &:visited {
         color: rgba(0, 0, 0, 1);
       }
+    }
+  }
+
+  .modal-wrapper {
+    h3 {
+      background-color: #6fc0be;
+      clip-path: polygon(0 15%, 100% 25%, 100% 75%, 0 85%);
+      color: #fff;
+      display: inline-block;
+      padding: 1em 1em 1em 1.5em;
     }
   }
 

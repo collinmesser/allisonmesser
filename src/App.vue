@@ -61,7 +61,7 @@ body {
       user-select: none;
     }
 
-    #menuToggle input {
+    #menuToggle>input {
       display: block;
       width: 40px;
       height: 32px;
