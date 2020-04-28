@@ -16,9 +16,14 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .social-media {
   display: grid;
-  grid-template-columns: 33% auto;
+  grid-template-columns: 21em auto;
+
+  aside {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
 }
 </style>

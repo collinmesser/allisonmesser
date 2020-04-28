@@ -1,11 +1,7 @@
 <template>
   <div class="hello">
     <Sidebar />
-    <Header src="">
-      <slot name="title-slot">
-        Hey There!
-      </slot>
-    </Header>
+    <Header src="AM_Creative_Hello.jpg" />
     <section>
       <h2>
         Hey There!
@@ -69,7 +65,13 @@ export default {
 <style scoped lang="scss">
 .hello {
   display: grid;
-  grid-template-columns: 33% auto;
+  grid-template-columns: 21em auto;
+  grid-template-rows: minmax(100px, auto);
+
+  aside {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
 
   section {
     margin-left: 2em;

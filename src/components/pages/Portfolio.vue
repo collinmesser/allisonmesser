@@ -1,37 +1,42 @@
 <template>
   <div class="portfolio">
     <Sidebar />
+    <Header src="AM_Creative_Hello.jpg">
+      <template v-slot:header>
+        <h1>Design<br>Portfolio</h1>
+      </template>
+    </Header>
     <section>
       <div class="projects">
         <Project
-          page="Senna"
           src="AMCreative_Portfolio-Senna_BW.png"
           hovered="AMCreative_Portfolio-Senna_Color.png"
           alt="Senna Logo"
         />
         <Project
-          page="Nightmarket"
           src="AMCreative_Portfolio-NightMarket_BW.png"
           hovered="AMCreative_Portfolio-NightMarket_Color.png"
           alt="Sharonville Night Market Logo"
         />
         <Project
-          page="Fiadventures"
           src="AMCreative_Portfolio-FIAdventures-BW.png"
           hovered="AMCreative_Portfolio-FIAdventures-Color.png"
           alt="FI Adventures Logo"
         />
         <Project
-          page="Stripchurch"
           src="AMCreative_Portfolio-StripChurch-BW.png"
           hovered="AMCreative_Portfolio-StripChurch-Color.png"
           alt="Strip Church Dayton Logo"
         />
         <Project
-          page="Truerevival"
           src="AMCreative_Portfolio_TrueRevival_BW.png"
           hovered="AMCreative_Portfolio_TrueRevival_Color.png"
           alt="TrueRevival Ministry Logo"
+        />
+        <Project
+          src="AMCreative_Portfolio_Libations_BW.png"
+          hovered="AMCreative_Portfolio_Libations_Color.png"
+          alt="Libations"
         />
       </div>
     </section>
@@ -39,22 +44,29 @@
 </template>
 
 <script>
+import Header from "../Header";
 import Sidebar from "../Sidebar.vue";
 import Project from "../Project.vue";
 
 export default {
   name: "Portfolio",
   components: {
+    Header,
     Sidebar,
     Project,
   },
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .portfolio {
   display: grid;
-  grid-template-columns: 33% auto;
+  grid-template-columns: 21em auto;
+
+  aside {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
 }
 
 .projects {

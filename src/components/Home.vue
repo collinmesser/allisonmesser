@@ -19,7 +19,7 @@ export default {
 <style scoped lang="scss">
 .home {
   display: grid;
-  grid-template-columns: 33% auto;
+  grid-template-columns: 21em auto;
   background-image: url("../assets/../assets/AM_Creative_Homepage-Allie.jpg");
   background-size: cover;
   background-position: center;

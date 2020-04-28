@@ -1,15 +1,13 @@
 <template>
   <div class="project">
     <div class="card">
-      <router-link :to="page">
-        <img
-          :alt="alt"
-          class=""
-          :src="hover ? require(`../assets/designs/${hovered}`) : require(`../assets/designs/${src}`)"
-          @mouseover="hover = true"
-          @mouseleave="hover = false"
-        >
-      </router-link>
+      <img
+        :alt="alt"
+        class=""
+        :src="hover ? require(`../assets/designs/${hovered}`) : require(`../assets/designs/${src}`)"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+      >
     </div>
   </div>
 </template>
@@ -45,7 +43,6 @@ export default {
 
 <style scoped lang="scss">
 img {
-  cursor: pointer;
   max-width: 100%;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);

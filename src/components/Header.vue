@@ -1,13 +1,13 @@
 <template>
   <div class="header">
-    <h1 name="title-slot">
-      {slot}
-    </h1>
+    <header>
+      <slot name="header" />
+    </header>
     <img
       alt="Header Image"
       class=""
-      src="require(`../assets/designs/${src}`)"
-    />
+      :src="require(`../assets/headers/${src}`)"
+    >
   </div>
 </template>
 
@@ -31,4 +31,17 @@ export default {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.header {
+  img {
+    width: 100%;
+  }
+
+  header {
+    bottom: 9em;
+    color: #fff;
+    margin-left: 2em;
+    position: absolute;
+  }
+}
+</style>

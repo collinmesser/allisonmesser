@@ -23,7 +23,9 @@ body {
 #app {
   display: grid;
   color: #2c3e50;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: freight-sans-pro, Helvetica, Arial sans-serif;
+  font-weight: 400;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
