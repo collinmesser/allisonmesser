@@ -5,14 +5,18 @@
 </template>
 
 <script>
-
 export default {
-  name: 'App',
-}
+  name: "App",
+};
 </script>
 
-<style>
-body{
+<style lang="scss">
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
   margin: 0;
 }
 
@@ -22,11 +26,10 @@ body{
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin-top: 40px;
+  height: 100%;
 }
 
-.projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.hidden {
+  display: none;
 }
 </style>

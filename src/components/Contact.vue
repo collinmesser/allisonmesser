@@ -10,21 +10,36 @@
           </div>
 
           <div class="modal-body">
-            <slot name="body">
-              default body
-            </slot>
-          </div>
-
-          <div class="modal-footer">
-            <slot name="footer">
-              default footer
-              <button
-                class="modal-default-button"
-                @click="$emit('close')"
-              >
-                OK
-              </button>
-            </slot>
+            <form
+              name="contact"
+              method="POST"
+              netlify-honeypot="bot-field"
+              data-netlify="true"
+            >
+              <p class="hidden">
+                <label>
+                  Don’t fill this out if you're human:
+                  <input name="bot-field" />
+                </label>
+              </p>
+              <p>
+                <label>Email: <input type="text" name="email"/></label>
+              </p>
+              <p>
+                <label>Message: <textarea name="message"/></label>
+              </p>
+              <div class="modal-footer">
+                <p>
+                  <button
+                    type="submit"
+                    class="modal-default-button"
+                    @click="$emit('close')"
+                  >
+                    Send
+                  </button>
+                </p>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -38,7 +53,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .modal-mask {
   position: fixed;
   z-index: 9998;
@@ -102,5 +117,4 @@ export default {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-
 </style>

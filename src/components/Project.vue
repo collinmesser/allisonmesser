@@ -43,16 +43,16 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 img {
   cursor: pointer;
   max-width: 100%;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
 
-img:hover {
-  box-shadow: 0 20px 34px 0px rgba(0,0,0,0.25);
+  &:hover {
+    box-shadow: 0 20px 34px 0px rgba(0,0,0,0.25);
+  }
 }
 
 .project {

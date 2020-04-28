@@ -10,7 +10,7 @@ import Truerevival from './components/pages/Senna';
 import Hello from './components/pages/Hello';
 import ContentCreation from './components/pages/ContentCreation';
 import SocialMedia from './components/pages/SocialMedia';
-import Projects from './components/pages/Projects';
+import Portfolio from './components/pages/Portfolio';
 
 
 Vue.use(Router);
@@ -39,9 +39,9 @@ export default new Router({
       component: SocialMedia,
     },
     {
-      path: '/projects',
-      name: 'projects',
-      component: Projects,
+      path: '/portfolio',
+      name: 'portfolio',
+      component: Portfolio,
     },
     {
       path: '/senna',
