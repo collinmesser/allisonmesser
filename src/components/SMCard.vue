@@ -75,6 +75,26 @@ export default {
       margin-right: 2em;
       width: 19em;
     }
+
+    @media screen and (max-width: 991.98px) {
+      header {
+        align-self: flex-start;
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        margin: 0 1em;
+      }
+
+      body {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        margin: 6em 1em 0;
+      }
+      img {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+      width: 19em;
+    }
+    }
   }
 }
 

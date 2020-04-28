@@ -43,5 +43,12 @@ export default {
     margin-left: 2em;
     position: absolute;
   }
+
+  @media screen and (max-width: 991.98px) {
+    header {
+      top: 0;
+      margin-left: 8em;
+    }
+  }
 }
 </style>

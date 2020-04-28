@@ -1,9 +1,15 @@
 <template>
   <div class="social-media">
-    <Sidebar />
+    <div id="menuToggle">
+      <input type="checkbox">
+      <span />
+      <span />
+      <span />
+      <Sidebar />
+    </div>
     <Header src="AM_Creative_SocialMedia.jpg">
       <template v-slot:header>
-        <h1>SOCIAL MEDIA<br>PORTFOLIO</h1>
+        <h1>Social Media<br>Portfolio</h1>
       </template>
     </Header>
     <section>
@@ -104,9 +110,37 @@ export default {
   display: grid;
   grid-template-columns: 21em auto;
 
-  aside {
+  #menuToggle input,
+  #menuToggle span {
+    display: none;
+  }
+
+  #menuToggle {
     grid-row-start: 1;
     grid-row-end: 3;
+  }
+
+  section {
+    grid-column: 2 / 3;
+    margin-left: 2em;
+  }
+
+  @media screen and (max-width: 991.98px) {
+      #menuToggle {
+        position: absolute !important;
+        grid-row-start: inherit;
+        grid-row-end: inherit;
+      }
+
+      .header {
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+      }
+
+      section {
+        grid-column: 1 / 3;
+        margin-left: 1em;
+      }
   }
 }
 </style>
